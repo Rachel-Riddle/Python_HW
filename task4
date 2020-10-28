@@ -1,0 +1,13 @@
+income = int(input("Введите выручку "))
+expenses = int(input("Введите издержки "))
+total = income - expenses
+if total < 0:
+    print(f"Вы работаете в убыток, он составляет {total} рублей.")
+elif total > 0:
+    profitability = total / income * 100
+    staff = int(
+        input(f"Вы работает в прибыль! Рентабельность составляет {profitability}%, введите количество сотрудников "))
+    pronstff = total / staff
+    print(f"Каждый сотрудник приносит в среднем {pronstff} рублей прибыли. ")
+else:
+    print("Вы вышли в ноль.")

@@ -1,0 +1,12 @@
+km1 = int(input("Сколько спортсмен пробежал в первый день? "))
+kmf = int(input("Укажите желаемое количество километров "))
+maxcount = 0
+while True:
+    maxcount = maxcount + 1
+    if km1 * 1.1 >= kmf:
+        break
+    if km1 * 1.1 < kmf:
+        km1 = km1 * 1.1
+        continue
+
+print(f"У него это займет {maxcount} дней")
