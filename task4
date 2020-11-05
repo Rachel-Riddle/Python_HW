@@ -1,0 +1,11 @@
+example_str = input("Введите несколько слов через пробел ")
+example_word = []
+n = 1
+for el in range(example_str.count(' ') + 1):
+    example_word = example_str.split()
+    if len(str(example_word)) <= 10:
+        print(f" {n} {example_word[el]}")
+        n += 1
+    else:
+        print(f" {n} {example_word[el][0:10]}")
+        n += 1

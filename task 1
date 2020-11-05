@@ -1,0 +1,4 @@
+example_list = ['text', 2, 45.5, None]
+
+for el in example_list:
+    print(type(el))

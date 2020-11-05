@@ -1,0 +1,15 @@
+q = int(input("Введите количество товара "))
+n = 1
+features = []
+goods = []
+all_goods = {}
+while n <= q:
+    features = dict({'Название': input("Введите название "), 'Цена': input("Введите цену "),
+                    'Количество': input('Введите количество '), 'eд': input("Введите единицу измерения ")})
+    goods.append((n, features))
+    n += 1
+    all_goods = dict(
+        {'Название': features.get('Название'), 'Цена': features.get('Цена'), 'Количество': features.get('Количество'),
+         'ед': features.get('ед')})
+print(goods)
+print(all_goods)
