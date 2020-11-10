@@ -1,0 +1,11 @@
+def function(a, b, c):
+    numbers = [a, b, c]
+    numbers.sort()
+    return numbers[2] * numbers[1]
+
+
+d = int(input("Введите первое число "))
+e = int(input("Введите второе число "))
+f = int(input("Введите третье число "))
+
+print(function(d, e, f))

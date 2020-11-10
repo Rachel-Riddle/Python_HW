@@ -1,0 +1,11 @@
+def program(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Вы ввели ноль")
+
+
+d = int(input("Введите делимое "))
+c = int(input("Введите делитель "))
+
+print(program(d, c))

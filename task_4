@@ -1,0 +1,7 @@
+def function(x, y):
+    return x ** y
+
+
+k = float(input("Введите число "))
+l = float(input("Введите степень "))
+print(function(k, l))

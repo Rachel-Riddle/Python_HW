@@ -1,0 +1,13 @@
+def function(name, surname, year, place, email, number):
+    print(
+        f"Ваше имя {name} {surname}. Вы родились в {year} году. Проживаете в городе {place}. Ваши контакты - {email}, {number} ")
+
+
+a = input("Введите имя ")
+b = input("Введите фамилию ")
+c = input("Введите год рождения ")
+d = input("Введите место проживания ")
+e = input("Введите email ")
+f = input("Введите телефонный номер ")
+
+print(function(a, b, c, d, e, f))

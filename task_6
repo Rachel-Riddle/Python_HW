@@ -1,0 +1,6 @@
+def int_func(line):
+    s = ' '
+    return s.join([n.capitalize() for n in line.split()])
+
+
+print(int_func(input("Введите слова ")))
